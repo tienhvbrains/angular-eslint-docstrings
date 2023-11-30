@@ -1,19 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+    /**
+     * Constructor
+     */
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        console.log("ngOnInit");
+    }
 
-  getMenu(): string[] {
-    return ["abc", "def"];
-  }
+    /**
+     * Hello
+     * @param lastValue - last value to be print
+     */
+    getMenu(lastValue: string): string[] {
+        return ["abc", "def", lastValue];
+    }
 
 }
