@@ -17,6 +17,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: "module"
     },
+    ignorePatterns: ["**/*.html", "**/*.scss", "**/*.spec.ts"],
     rules: {
         "tsdoc/syntax": "error",
         "jsdoc/require-jsdoc": [
